@@ -1,0 +1,14 @@
+.question {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: flex-end;
+  margin: 10px;
+  padding-right: 10px;
+  border-radius: 15px;
+}
+
+.heure {
+  color: rgb(10, 35, 255)
+}
