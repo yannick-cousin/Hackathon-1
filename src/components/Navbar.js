@@ -53,11 +53,12 @@ const Navbar = ({notifications, setNotifications}) => {
       </div>
       <div className={menu === true ? "menuDeroulant deroule" : "menuDeroulant"}> 
       <ul>
-        <li>Accueil</li>
-        <li>Profil</li>
-        <li>Messages</li>
-        <li>Membres</li>
-        <li>QCM</li>
+
+      <NavLink to="/"><li>Accueil</li></NavLink>
+      <NavLink to="/"><li>QCM</li></NavLink>
+      <NavLink to="/messages"><li>Messages</li></NavLink>
+      <NavLink to="/"><li>Membres</li></NavLink>
+      <NavLink to="/profile"><li>Profil</li></NavLink>
       </ul>
     </div>
   </div>
