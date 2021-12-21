@@ -1,0 +1,111 @@
+.Profile {
+
+    color: white;
+
+}
+
+.avatar {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.photoProfile {
+
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.btnChangeAvatar {
+    position: relative;
+    background-color: blue;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    bottom:20px;
+    left:20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.decoLine {
+
+width: 100%;
+height: 2px;
+background-color: white;
+margin: 0px 10px 0px 10px;
+
+}
+
+.titreCatProfile {
+
+display: flex;
+align-items: center;
+font-weight: bold;
+
+}
+
+.titreCatProfileMdp {
+
+width: 23%;
+
+}
+
+.texteCatProfile {
+
+white-space: nowrap
+
+}
+
+.texteareaProfile {
+
+background-color: transparent;
+border: none;
+resize: none;
+width: 50%;
+height: 25px;
+padding: 0px 5px 0px 5px;
+margin-left: 20px;
+
+}
+
+::placeholder {
+    color: white;
+    font-size: 80%;
+
+  }
+
+.lesBoutons {
+
+display: flex;
+justify-content: flex-end;
+padding: 10px 50px 10px 10px;
+}
+
+.lesBoutons button {
+
+margin: 0px 5px 0px 5px;
+border-radius: 2px;
+border: none;
+padding: 5px;
+font-weight: bold;
+
+}
+
+.btnAnnuler {
+background-color: rgb(255, 82, 82);
+color: white;
+}
+
+.btnEnregistrer {
+background-color: rgb(91, 91, 250);
+color: white;
+}
