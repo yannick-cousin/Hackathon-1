@@ -61,7 +61,7 @@ const Navbar = ({notifications, setNotifications}) => {
       <NavLink to="/"><li>Accueil</li></NavLink>
       <NavLink to="/"><li>Quiz</li></NavLink>
       <NavLink to="/messages"><li>Messages</li></NavLink>
-      <NavLink to="/"><li>Membres</li></NavLink>
+      <NavLink to="/members"><li>Membres</li></NavLink>
       <NavLink to="/profile"><li>Profil</li></NavLink>
       </ul>
     </div>
