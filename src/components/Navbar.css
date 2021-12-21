@@ -75,6 +75,7 @@ header {height: 100px;}
   transform: translateY(0%);
   z-index: 1;
   padding: 10px;
+  font-weight: bold;
 }
 
 .menuDeroulant ul {
