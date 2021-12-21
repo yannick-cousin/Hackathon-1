@@ -4,19 +4,19 @@ import Contact from './Contact';
 import './Messages.css';
 
 const Messages = ({notifications, setNotifications}) => {
-  const [characters, setCharacters] = useState([])
-  console.log(characters);
+  const [contact, setContact] = useState([])
+  console.log(contact);
 
 	useEffect(() => {
 		const getData = () => {
-       for (let i = 0; i < 3; i++) {
-        let random = Math.floor(Math.random() * (88 - 1)) + 1;
-        fetch(`https://miadil.github.io/starwars-api/api/id/${random}.json`)
-				  .then((res) => res.json())
-				  .then((res) => setCharacters({res}))
-    }}
-      getData()  
-    }, [])
+			fetch("https://miadil.github.io/starwars-api/api/all.json")
+				.then((res) => res.json())
+				.then((res) => setContact(res))
+		}
+		getData()
+	}, [])
+
+  console.log(contact);
 
   return (
     <div className="messages">
@@ -26,9 +26,9 @@ const Messages = ({notifications, setNotifications}) => {
         Ici vous pouvez communiquer avec les autres membres de Star Seducer.
       </div>
       <div className="messagerie">
-        <div class="contacts">
-          <div class="contact">
-          {characters.map((character) => (
+        <div className="contacts">
+          <div className="contact">
+          {contact.map((character) => (
 					<Contact
 						key={character.id}
 						id={character.id}
