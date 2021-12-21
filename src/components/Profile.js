@@ -3,6 +3,7 @@ import React, { useRef, useState } from 'react';
 import ReactDOM from 'react-dom'
 import Avatar from 'react-avatar-edit'
 import AvatarChange from './AvatarChange';
+import CategorieProfile from './CategorieProfile';
 
 const Profile = () => {
 
@@ -19,68 +20,55 @@ const Profile = () => {
       setInput(e.target.value)
   }
 
-  return (
-    <div className='Profile'>
-      <figure className="avatar">
+return (
+<div className='Profile'>
+<figure className="avatar">
+    <AvatarChange />
+</figure>
 
+<CategorieProfile 
+nameCat="Pseudo" 
+lengthCat="16" 
+placeholderCat="Votre pseudo" 
+defaultValueCat ="Miadil"
+/>
 
-          <AvatarChange />
+<CategorieProfile 
+nameCat="Nom complet" 
+lengthCat="32" 
+placeholderCat="Votre complet" 
+defaultValueCat ="Kerkeb Abdou Miadil"
+/>
 
+<CategorieProfile 
+nameCat="Race" 
+lengthCat="24" 
+placeholderCat="Votre race" 
+defaultValueCat ="Inconnue"
+/>
 
+<CategorieProfile 
+nameCat="Planéte" 
+lengthCat="24" 
+placeholderCat="Votre planéte" 
+defaultValueCat ="Inconnue"
+/>
 
-      </figure>
+<CategorieProfile 
+nameCat="Email" 
+lengthCat="32" 
+placeholderCat="Votre email" 
+defaultValueCat ="Kerkeb@gmail.com"
+/>
 
-      <div className='titreCatProfile'>
-        <div className='texteCatProfile'>
-        Pseudo
-        </div>
-        <div className='decoLine'></div>
-      </div>
-      <input className='texteareaProfile' maxlength="16" placeholder='Votre pseudo' value="Miadil"></input>
-      
-      <div className='titreCatProfile'>
-        <div className='texteCatProfile'>
-          Nom complet
-        </div>
-        <div className='decoLine'></div>
-      </div>
-      <input className='texteareaProfile' maxlength="32" placeholder='Votre nom' value="Kerkeb Abdou Miadil"></input>
+<CategorieProfile 
+nameCat="Mot de passe" 
+lengthCat="32" 
+placeholderCat="Votre mot de passe" 
+defaultValueCat ="cestpasbienderegarderlecode"
+type="password"
+/>
 
-
-      <div className='titreCatProfile'>
-        <div>
-        Race
-        </div>
-        <div className='decoLine'></div>
-      </div>
-      <input className='texteareaProfile' maxlength="24" placeholder='Votre race' value={input} onChange={changeHandle}></input>
-
-
-      <div className='titreCatProfile'>
-        <div>
-        Planéte
-        </div>
-        <div className='decoLine'></div>
-      </div>
-      <input className='texteareaProfile' maxlength="24" placeholder='Votre planéte' ></input>
-
-
-      <div className='titreCatProfile'>
-        <div>
-        Email
-        </div>
-        <div className='decoLine'></div>
-      </div>
-      <input className='texteareaProfile' maxlength="32" placeholder='Votre email' value="Kerkeb@gmail.com"></input>
-
-
-      <div className='titreCatProfile'>
-        <div className="titreCatProfileMdp">
-        Mot de passe
-        </div>
-        <div className='decoLine'></div>
-      </div>
-      <input className='texteareaProfile' maxlength="36" type="password" placeholder='Votre mdp' value="cestpasbienderegarderlecode"></input>
 
 <div className="lesBoutons"> 
     <button className='btnAnnuler'>Annuler</button>
