@@ -82,6 +82,8 @@ margin-left: 20px;
     font-size: 80%;
 
   }
+  
+
 
 .lesBoutons {
 
@@ -108,4 +110,9 @@ color: white;
 .btnEnregistrer {
 background-color: rgb(91, 91, 250);
 color: white;
+}
+
+input {
+
+    color: white
 }

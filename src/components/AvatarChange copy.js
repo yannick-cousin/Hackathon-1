@@ -58,21 +58,13 @@ cropperOpen: true
 });
 };
 
-
-const inputChangeAvatar = () => {
-
-  <input id="btnChoisirFichier" type="file" accept="image/*" onChange={handleFileChange} />
-} 
-
 return (
-<div className="containerAvatarEtPrevisualisation">
-
-
-  <div >
-    <div className="containerAvatarPrefait">
+<div>
+<Box display="flex">
+  <Box width="35%">
     <Avatar
       src={picture.croppedImg}
-      style={{ display:"flex", width: "40%", height: "auto", padding: "5" }}
+      style={{ width: "100%", height: "auto", padding: "5" }}
     />
     <Button
       variant="contained"
@@ -82,14 +74,7 @@ return (
       
       <input id="btnChoisirFichier" type="file" accept="image/*" onChange={handleFileChange} />
     </Button>
-
-    
-
-    </div>
-
-  </div>
-<Box display="flex">
-
+  </Box>
 
   {picture.cropperOpen && (
     <Box display="block">
@@ -112,18 +97,15 @@ return (
         step={0.1}
         onChange={handleSlider}
       ></Slider>
-      <div className="btnEnregistrerCroppedImg">
+      <Box>
         <Button variant="contained" onClick={handleCancel}>
-          Annuler
+          Cancel
         </Button>
-        <Button onClick={handleSave}>Enregistrer</Button>
-      </div>
+        <Button onClick={handleSave}>Save</Button>
+      </Box>
     </Box>
   )}
 </Box>
-
-
-
 </div>
 );
 };

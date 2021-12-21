@@ -2,3 +2,45 @@
     display: flex;
     justify-content: center;
 }
+
+.MuiButton-root {
+
+display: flex!important;
+justify-content: center!important;
+align-items: center!important;
+align-content: center!important;
+
+}
+
+.containerAvatarPrefait {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}  
+
+.containerAvatarEtPrevisualisation {
+
+    display: flex;
+    align-items: center;
+}
+
+.btnEnregistrerCroppedImg {
+
+    display: flex;
+    justify-content: flex-end;
+    
+    
+}
+
+.btnEnregistrerCroppedImg btn{
+
+   color : white
+    
+    
+}
+
+.MuiButton-contained {
+
+color: white;
+
+}

@@ -1,5 +1,5 @@
 import './Profile.css';
-import React, { useRef, } from 'react';
+import React, { useRef, useState } from 'react';
 import ReactDOM from 'react-dom'
 import Avatar from 'react-avatar-edit'
 import AvatarChange from './AvatarChange';
@@ -13,14 +13,16 @@ const Profile = () => {
    inputFile.current.click();
   };
 
+  const [input, setInput] = useState('')
+
+  const changeHandle = e => {
+      setInput(e.target.value)
+  }
+
   return (
     <div className='Profile'>
       <figure className="avatar">
-{/*           <div className="photoProfile"></div>
-          <button onClick={onButtonClick} className='btnChangeAvatar'>✎</button> */}
 
-{/*           <input type='file' id='file' ref={inputFile} style={{display: 'none'}}/>
- */}
 
           <AvatarChange />
 
@@ -34,7 +36,7 @@ const Profile = () => {
         </div>
         <div className='decoLine'></div>
       </div>
-      <input className='texteareaProfile' maxlength="16" placeholder='Votre pseudo'></input>
+      <input className='texteareaProfile' maxlength="16" placeholder='Votre pseudo' value="Miadil"></input>
       
       <div className='titreCatProfile'>
         <div className='texteCatProfile'>
@@ -42,7 +44,7 @@ const Profile = () => {
         </div>
         <div className='decoLine'></div>
       </div>
-      <input className='texteareaProfile' maxlength="32" placeholder='Votre nom'></input>
+      <input className='texteareaProfile' maxlength="32" placeholder='Votre nom' value="Kerkeb Abdou Miadil"></input>
 
 
       <div className='titreCatProfile'>
@@ -51,7 +53,7 @@ const Profile = () => {
         </div>
         <div className='decoLine'></div>
       </div>
-      <input className='texteareaProfile' maxlength="24" placeholder='Votre race'></input>
+      <input className='texteareaProfile' maxlength="24" placeholder='Votre race' value={input} onChange={changeHandle}></input>
 
 
       <div className='titreCatProfile'>
@@ -60,7 +62,7 @@ const Profile = () => {
         </div>
         <div className='decoLine'></div>
       </div>
-      <input className='texteareaProfile' maxlength="24" placeholder='Votre planéte'></input>
+      <input className='texteareaProfile' maxlength="24" placeholder='Votre planéte' ></input>
 
 
       <div className='titreCatProfile'>
@@ -69,7 +71,7 @@ const Profile = () => {
         </div>
         <div className='decoLine'></div>
       </div>
-      <input className='texteareaProfile' maxlength="32" placeholder='Votre email'></input>
+      <input className='texteareaProfile' maxlength="32" placeholder='Votre email' value="Kerkeb@gmail.com"></input>
 
 
       <div className='titreCatProfile'>
@@ -78,7 +80,7 @@ const Profile = () => {
         </div>
         <div className='decoLine'></div>
       </div>
-      <input className='texteareaProfile' maxlength="36" type="password" placeholder='Votre mdp'></input>
+      <input className='texteareaProfile' maxlength="36" type="password" placeholder='Votre mdp' value="cestpasbienderegarderlecode"></input>
 
 <div className="lesBoutons"> 
     <button className='btnAnnuler'>Annuler</button>
