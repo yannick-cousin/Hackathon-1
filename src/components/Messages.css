@@ -26,16 +26,78 @@
 .contacts { 
   grid-area: 1 / 1 / 6 / 2; 
   background-color: #0f0;
-  height: 100%;
+  height: 500px;
+  border-radius: 10px;
 }
 .receptionmessages { 
   grid-area: 1 / 2 / 5 / 4;
   background-color: #00f;
   height: auto;
+  border-radius: 10px;
 }
 .zonesaisie { 
   grid-area: 5 / 2 / 6 / 4; 
   background-color: rgb(255, 0, 0);
-  height: 100px;
+  height: 50px;
+  border-radius: 10px;
 }
-  
+
+.loader-container {
+	border-radius: 5px;
+	background: #333333;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.loader {
+	display:none;
+}
+
+.loader.active {
+	display: block;
+	position: relative;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	border: 7px solid transparent;
+	border-top-color: crimson;
+	animation: spin 3s linear infinite;
+}
+
+.loader::before, .loader::after {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	border: 7px solid transparent;
+
+}
+
+.loader::before {
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	border-top-color: rgb(252, 45, 86);
+	animation: spin 2.5s linear infinite;
+}
+
+.loader::after {
+	top: 25px;
+	left: 25px;
+	right: 25px;
+	bottom: 25px;
+	border-top-color: rgb(192, 108, 125);
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% { 
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
