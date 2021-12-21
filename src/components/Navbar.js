@@ -15,19 +15,19 @@ const Navbar = ({notifications, setNotifications}) => {
             <span className="text">Accueil</span>
           </li>
           </NavLink>
-          <NavLink to='/settings' className={(navbar) => (navbar.isActive ? 'list active' : 'list')}>
+          <NavLink to='/quizz' className={(navbar) => (navbar.isActive ? 'list active' : 'list')}>
           <li>
             <span className="icon"><i className="fas fa-question-circle"></i></span>
-            <span className="text">QCM</span>
+            <span className="text">Quiz</span>
           </li>
           </NavLink>
           <NavLink to='/messages' className={(navbar) => (navbar.isActive ? 'list active' : 'list')}>
           <li>
             <span className="icon"><i className="fas fa-comments"></i></span>
-            <span className="text">Membres</span>
+            <span className="text">Messages</span>
           </li>
           </NavLink>          
-          <NavLink to='/photos' className={(navbar) => (navbar.isActive ? 'list active' : 'list')}>
+          <NavLink to='/membres' className={(navbar) => (navbar.isActive ? 'list active' : 'list')}>
           <li>
             <span className="icon"><i className="fas fa-kiss-wink-heart"></i></span>
             <span className="text">Membres</span>
@@ -59,7 +59,7 @@ const Navbar = ({notifications, setNotifications}) => {
       <ul>
 
       <NavLink to="/"><li>Accueil</li></NavLink>
-      <NavLink to="/"><li>QCM</li></NavLink>
+      <NavLink to="/"><li>Quiz</li></NavLink>
       <NavLink to="/messages"><li>Messages</li></NavLink>
       <NavLink to="/"><li>Membres</li></NavLink>
       <NavLink to="/profile"><li>Profil</li></NavLink>
