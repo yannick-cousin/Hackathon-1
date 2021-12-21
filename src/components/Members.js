@@ -1,4 +1,4 @@
-const Photos = () => {
+const Members = () => {
   return (
     <div>
       Module Photos !
@@ -6,4 +6,4 @@ const Photos = () => {
   )
 }
 
-export default Photos;
+export default Members;
