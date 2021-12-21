@@ -21,20 +21,18 @@ const Navbar = ({notifications, setNotifications}) => {
             <span className="text">QCM</span>
           </li>
           </NavLink>
-          <NavLink to='/aze' className={(navbar) => (navbar.isActive ? 'list active' : 'list')}>
+          <NavLink to='/messages' className={(navbar) => (navbar.isActive ? 'list active' : 'list')}>
           <li>
             <span className="icon"><i className="fas fa-comments"></i></span>
-            <span className="text">Messages</span>
-            <span className={notifications >= 1 ? 'notifs active' : 'notifs'}>{notifications}</span>
+            <span className="text">Membres</span>
           </li>
-          </NavLink>
+          </NavLink>          
           <NavLink to='/photos' className={(navbar) => (navbar.isActive ? 'list active' : 'list')}>
           <li>
             <span className="icon"><i className="fas fa-kiss-wink-heart"></i></span>
             <span className="text">Membres</span>
           </li>
           </NavLink>
-
           <NavLink to="/profile" className={(navbar) => (navbar.isActive ? 'list active' : 'list')}>
           <li>
             <span className="icon"><i className="fas fa-user-cog"></i></span>
