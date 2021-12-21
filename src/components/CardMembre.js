@@ -27,6 +27,7 @@ function CardMembre(props) {
 					characters.map((character) => (
 						<div>
 							<p>{props.name}</p>
+                            qsdsqd
                             <img className="CardImg" src={props.image} alt={props.name} />
 						</div>
 					))

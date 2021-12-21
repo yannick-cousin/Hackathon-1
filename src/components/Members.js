@@ -6,8 +6,8 @@ const Members = () => {
     <div className='Members'>
  
 
-<CardMembre />
-
+    <CardMembre />
+    qsdqsd
     </div>
   )
 }
