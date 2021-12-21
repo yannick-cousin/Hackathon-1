@@ -27,7 +27,7 @@ const Navbar = ({notifications, setNotifications}) => {
             <span className="text">Messages</span>
           </li>
           </NavLink>          
-          <NavLink to='/membres' className={(navbar) => (navbar.isActive ? 'list active' : 'list')}>
+          <NavLink to='/members' className={(navbar) => (navbar.isActive ? 'list active' : 'list')}>
           <li>
             <span className="icon"><i className="fas fa-kiss-wink-heart"></i></span>
             <span className="text">Membres</span>
