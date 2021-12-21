@@ -7,7 +7,7 @@ const Members = () => {
  
 
     <CardMembre />
-    qsdqsd
+    
     </div>
   )
 }

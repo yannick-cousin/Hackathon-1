@@ -8,7 +8,7 @@ function CardMembre(props) {
 	const [isLoading, setIsLoading] = useState(false)
     useEffect(() => {
 		const getData = () => {
-			fetch("https://harrypotterapi20.herokuapp.com/characters")
+			fetch("https://miadil.github.io/starwars-api/api/all.json")
 				.then((res) => res.json())
 				.then((res) => {
 					console.log(res)
@@ -22,19 +22,19 @@ function CardMembre(props) {
 
     return (
         <div className='CardMembre'>
+
 <div className="GaleryCharacters">
 				{isLoading ? (
-					characters.map((character) => (
-						<div>
-							<p>{props.name}</p>
-                            qsdsqd
-                            <img className="CardImg" src={props.image} alt={props.name} />
+					characters.filter((characters) => characters.gender !== "").map((character) => (
+						<div className="cardMemberSolo">
+							<p>{character.name}</p>
+                            <img className="CardImg" src={character.image} alt={character.name} />
 						</div>
 					))
 				) : (
 					<div>...Loading</div>
 				)}
-			</div>
+</div>
 
 
         </div>
