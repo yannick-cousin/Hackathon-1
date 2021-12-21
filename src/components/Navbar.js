@@ -15,13 +15,13 @@ const Navbar = ({notifications, setNotifications}) => {
             <span className="text">Accueil</span>
           </li>
           </NavLink>
-          <NavLink to="/profile" className={(navbar) => (navbar.isActive ? 'list active' : 'list')}>
+          <NavLink to='/settings' className={(navbar) => (navbar.isActive ? 'list active' : 'list')}>
           <li>
-            <span className="icon"><i className="fas fa-user-cog"></i></span>
-            <span className="text">Profil</span>
+            <span className="icon"><i className="fas fa-question-circle"></i></span>
+            <span className="text">QCM</span>
           </li>
           </NavLink>
-          <NavLink to='/messages' className={(navbar) => (navbar.isActive ? 'list active' : 'list')}>
+          <NavLink to='/aze' className={(navbar) => (navbar.isActive ? 'list active' : 'list')}>
           <li>
             <span className="icon"><i className="fas fa-comments"></i></span>
             <span className="text">Messages</span>
@@ -34,10 +34,11 @@ const Navbar = ({notifications, setNotifications}) => {
             <span className="text">Membres</span>
           </li>
           </NavLink>
-          <NavLink to='/settings' className={(navbar) => (navbar.isActive ? 'list active' : 'list')}>
+
+          <NavLink to="/profile" className={(navbar) => (navbar.isActive ? 'list active' : 'list')}>
           <li>
-            <span className="icon"><i className="fas fa-question-circle"></i></span>
-            <span className="text">QCM</span>
+            <span className="icon"><i className="fas fa-user-cog"></i></span>
+            <span className="text">Profil</span>
           </li>
           </NavLink>
 			    <div className="indicator"></div>

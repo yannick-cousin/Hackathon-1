@@ -137,7 +137,8 @@ header {height: 100px;}
   
   .navigation ul {
     display: flex;
-    width: 350px; 
+    width: 500px; 
+    justify-content: space-between;
   }
 /*
 .navigation ul li {
@@ -270,22 +271,22 @@ header {height: 100px;}
 }
 
   .navigation ul a:nth-child(1).active ~ .indicator {
-    transform: translateX(calc(70px * 0));
+    transform: translateX(calc(100px * 0));
   }
 
   .navigation ul a:nth-child(2).active ~ .indicator {
-    transform: translateX(calc(70px * 1));
+    transform: translateX(calc(100px * 1.075));
   }
 
   .navigation ul a:nth-child(3).active ~ .indicator {
-    transform: translateX(calc(70px * 2));
+    transform: translateX(calc(100px * 2.15));
   }
 
   .navigation ul a:nth-child(4).active ~ .indicator {
-   transform: translateX(calc(70px * 3));
+   transform: translateX(calc(100px * 3.225));
   }
 
   .navigation ul a:nth-child(5).active ~ .indicator {
-    transform: translateX(calc(70px * 4));
+    transform: translateX(calc(100px * 4.275));
   }
 }
