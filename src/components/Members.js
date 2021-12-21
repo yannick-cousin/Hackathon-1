@@ -1,7 +1,13 @@
+import CardMembre from './CardMembre'
+
+
 const Members = () => {
   return (
-    <div>
-      Module Photos !
+    <div className='Members'>
+ 
+
+<CardMembre />
+
     </div>
   )
 }
