@@ -43,6 +43,10 @@ const Navbar = ({notifications, setNotifications}) => {
         </ul>
       </div>
       <div className="menuMobile">
+        <div className='containerLogoNavbar'>        
+          <div className='logoNavBar'> Space Seducers</div>
+        </div>
+
  	      <button onClick={() => setMenu(!menu)} className={menu === true ? "b1 active" : "b1"}>
           <div className="container-lignes">
             <div className="ligne"></div>
