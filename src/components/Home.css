@@ -1,0 +1,68 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.prez-1, .prez-2 {
+  margin-bottom: 20px;
+}
+
+.actualites {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 750px;
+  }
+  
+.actu-1, .actu-2, .actu-3, .actu-4 {
+  grid-area: 1 / 1 / 2 / 3;
+  display: none;
+  transition: 0.5s;
+}
+
+.actu-1.active, .actu-2.active, .actu-3.active, .actu-4.active {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+}
+
+.boutons {
+  display: flex;
+  flex-direction: row;
+}
+.boutonP { 
+  grid-area: 2 / 1 / 3 / 2;
+  border-radius: 10px;
+  color: white;
+  border-color: rgba(255, 0, 0, 0.856);
+  background-color: rgb(255, 0, 0);
+  margin-right: 20px;
+  padding: 5px;
+  height: 35px;
+}
+.boutonS {
+  grid-area: 2 / 2 / 3 / 3;
+  border-radius: 10px;
+  color: white;
+  border-color: rgba(255, 0, 0, 0.856);
+  background-color: rgb(255, 0, 0);
+  margin-left: 20px;
+  padding: 5px;
+  height: 35px;
+} 
