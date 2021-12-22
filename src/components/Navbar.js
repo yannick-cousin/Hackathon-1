@@ -15,35 +15,38 @@ const Navbar = ({notifications, setNotifications}) => {
             <span className="text">Accueil</span>
           </li>
           </NavLink>
-          <NavLink to="/profile" className={(navbar) => (navbar.isActive ? 'list active' : 'list')}>
+          <NavLink to='/quizz' className={(navbar) => (navbar.isActive ? 'list active' : 'list')}>
           <li>
-            <span className="icon"><i className="fas fa-user-cog"></i></span>
-            <span className="text">Profil</span>
+            <span className="icon"><i className="fas fa-question-circle"></i></span>
+            <span className="text">Quiz</span>
           </li>
           </NavLink>
           <NavLink to='/messages' className={(navbar) => (navbar.isActive ? 'list active' : 'list')}>
           <li>
             <span className="icon"><i className="fas fa-comments"></i></span>
             <span className="text">Messages</span>
-            <span className={notifications >= 1 ? 'notifs active' : 'notifs'}>{notifications}</span>
           </li>
-          </NavLink>
-          <NavLink to='/photos' className={(navbar) => (navbar.isActive ? 'list active' : 'list')}>
+          </NavLink>          
+          <NavLink to='/members' className={(navbar) => (navbar.isActive ? 'list active' : 'list')}>
           <li>
             <span className="icon"><i className="fas fa-kiss-wink-heart"></i></span>
             <span className="text">Membres</span>
           </li>
           </NavLink>
-          <NavLink to='/settings' className={(navbar) => (navbar.isActive ? 'list active' : 'list')}>
+          <NavLink to="/profile" className={(navbar) => (navbar.isActive ? 'list active' : 'list')}>
           <li>
-            <span className="icon"><i className="fas fa-question-circle"></i></span>
-            <span className="text">QCM</span>
+            <span className="icon"><i className="fas fa-user-cog"></i></span>
+            <span className="text">Profil</span>
           </li>
           </NavLink>
 			    <div className="indicator"></div>
         </ul>
       </div>
       <div className="menuMobile">
+        <div className='containerLogoNavbar'>        
+          <div className='logoNavBar'> Star Seducers</div>
+        </div>
+
  	      <button onClick={() => setMenu(!menu)} className={menu === true ? "b1 active" : "b1"}>
           <div className="container-lignes">
             <div className="ligne"></div>
@@ -54,11 +57,12 @@ const Navbar = ({notifications, setNotifications}) => {
       </div>
       <div className={menu === true ? "menuDeroulant deroule" : "menuDeroulant"}> 
       <ul>
-        <li>Accueil</li>
-        <li>Profil</li>
-        <li>Messages</li>
-        <li>Membres</li>
-        <li>QCM</li>
+
+      <NavLink to="/"><li>Accueil</li></NavLink>
+      <NavLink to="/quizz"><li>Quiz</li></NavLink>
+      <NavLink to="/messages"><li>Messages</li></NavLink>
+      <NavLink to="/members"><li>Membres</li></NavLink>
+      <NavLink to="/profile"><li>Profil</li></NavLink>
       </ul>
     </div>
   </div>

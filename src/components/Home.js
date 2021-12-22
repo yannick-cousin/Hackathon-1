@@ -27,16 +27,22 @@ const Home = () => {
 
   return (
     <div className="home">
-      <h2>Bienvenue sur Star Seducers</h2><br /><br /><br />
+      <h2>Bienvenue sur Star Seducers</h2>
+      <div className='containerPrez'>
       <div className="prez-1">
         Tu veux rencontrer des personnes chaudes comme des culs de fusées au décollage ?<br />
         Tu es au bon endroit !<br />
       </div>
       <div className="prez-2">
         Ici, pas de pression, pas racisme, vous trouverez la personne idéale pour vous. <br />
-        N'hesitez pas à faire notre quizz afin de vous orienteez vers la bonne personne.
+        N'hesitez pas à faire notre quizz afin de vous orientez vers la bonne personne.
       </div>
       <h3>Les actualités chaudes du fin fond de la galaxie</h3>
+      </div>
+      <div className='containerActus'>
+      <div className="boutons">
+        <div onClick={() => update(actu-1)} className="boutonActu boutonActuPrecedentMobile">  ‹  </div>
+        </div>
       <div className="actualites">
         <div className={actu ===1 ? 'actu-1 active' : 'actu-1'}>
           <img src={actu1} alt="actu1" />
@@ -56,9 +62,10 @@ const Home = () => {
         </div>
       </div>
       <div className="boutons">
-        <div onClick={() => update(actu-1)} className="boutonP">  Actualité précédent  </div>
-        <div onClick={() => update(actu+1)} className="boutonS">  Actualité suivante  </div>
+        <div onClick={() => update(actu+1)} className="boutonActu boutonActuSuivantMobile">  ›  </div>
         </div>
+      </div>
+
     </div>
   )
 }

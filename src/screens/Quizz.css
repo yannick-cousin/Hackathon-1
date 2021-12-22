@@ -1,0 +1,218 @@
+.quizContainer {
+
+  display: flex;
+  justify-content: center;
+}
+  
+
+
+  .app {
+    background-color: #252d4a;
+    width: 90%;
+    min-height: 500px;
+    border-radius: 53px;
+    padding: 20px 0px 20px 0px;
+    box-shadow: 10px 10px 42px 0px rgb(0 0 0 / 75%);
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin: 20px 20px 20px 20px;
+  }
+
+  .app button {
+    font-weight: bold;
+  }
+
+  .loveIs {
+    width: 400px;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 10%;
+    font-size: 25px;
+    margin: 0px 20px 0px 20px;
+  }
+  
+  .score-section {
+    display: flex;
+    font-size: 24px;
+    align-items: center;
+    background-color: whitesmoke;
+    
+  }
+  
+  /* QUESTION/TIMER/LEFT SECTION */
+  .question-section {
+    width: 400px;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 10%;
+    margin: 0px 20px 0px 20px;
+  }
+  
+  .question-count {
+    margin-bottom: 20px;
+  }
+  
+  .question-count span {
+    font-size: 250%;
+  }
+  
+  .question-text {
+    margin-bottom: 12px;
+    font-size: 150%;
+    display: flex;
+  }
+
+  .containerquestion-text {
+
+    display: flex;
+    justify-content: center;
+    height: 75%;
+    align-items: center;
+  }
+  
+  .loveIsText {
+
+    display: flex;
+    font-size: 120%;
+
+  }
+
+  .containerloveIsLove {
+    display: flex;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+
+    
+
+  }
+  .timer-text {
+    background: rgb(230, 153, 12);
+    padding: 15px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border: 5px solid rgb(255, 189, 67);
+    border-radius: 15px;
+    text-align: center;
+  }
+  
+  /* ANSWERS/RIGHT SECTION */
+  .answer-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 120%;
+  }
+
+  .answer-section button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
+    margin: 5px;
+  }
+  
+  button {
+    width: 100%;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #252d4a;
+    border-radius: 15px;
+    display: flex;
+    padding: 5px;
+    justify-content: flex-start;
+    align-items: center;
+    border: 5px solid #234668;
+    cursor: pointer;
+  }
+  
+  .correct {
+    background-color: #2f922f;
+  }
+  
+  .incorrect {
+    background-color: #ff3333;
+  }
+  
+  .answer-section button:hover {
+    background-color: #555e7d;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button svg {
+    margin-right: 5px;
+  }
+
+
+  @media (max-width: 800px) {
+
+.app {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0px;
+  top: 0%;
+  position: absolute;
+}
+
+.question-section {
+  display: flex;
+  width: 100%;
+  padding: 10vh 20px 20px 20px;
+  margin: 0px;
+  background-color: white;
+  border-radius: 0px 0px 0px 40px;
+  flex-direction: column;
+  /* position: relative; */
+  top: 0%;
+}
+
+.answer-section {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 120%;
+  padding: 10px 0px 10px 0px;
+}
+
+
+.loveIs {
+  width: 100%;
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius:  0px 40px 0px 0px;
+  font-size: 25px;
+  margin: 0px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.answer-section button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 10vh;
+  margin: 5px;
+}
+
+.paddingloveIs {
+
+height: 10vh;
+
+}
+
+
+
+
+  }
+
