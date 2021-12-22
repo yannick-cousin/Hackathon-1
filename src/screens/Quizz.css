@@ -1,23 +1,4 @@
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  * {
-    font-family: "Verdana", cursive, sans-serif;
-    color: #ffffff;
-  }
-  
-  body {
-    background-color: #7cc6fe;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
+
   
   .app {
     background-color: #252d4a;
@@ -33,18 +14,25 @@ body {
   .loveIs {
     width: 400px;
     padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 10%;
+    font-size: 25px;
   }
   
   .score-section {
     display: flex;
     font-size: 24px;
     align-items: center;
+    background-color: whitesmoke;
     
   }
   
   /* QUESTION/TIMER/LEFT SECTION */
   .question-section {
-    padding: 0%;
+    width: 400px;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 10%;
   }
   
   .question-count {

@@ -189,7 +189,7 @@ export default function Quizz() {
 					</button>)
 				}
 			</div>
-			<div clasName="loveIs">
+			<div className="loveIs">
 				You have matched with {love}
 			</div>
 		</div>
