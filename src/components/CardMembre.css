@@ -63,7 +63,7 @@ background-color: white;
 
 
 
-@media (max-width: 650px) { 
+@media (max-width: 600px) { 
 
 
 
@@ -82,4 +82,34 @@ background-color: white;
     }
 
 
+}
+
+
+
+@media (min-width: 600px ) and (max-width: 1100px) { 
+    .cardMemberSolo {
+
+        width: 20%;
+        margin: 10px;
+        height: 30vh;
+    }
+}
+
+@media (min-width: 1100px ) and (max-width: 1500px) { 
+    .cardMemberSolo {
+
+        width: 15%;
+        margin: 10px;
+        height: 30vh;
+    }
+}
+
+
+@media (min-width: 1500px ) and (max-width: 1700px) { 
+    .cardMemberSolo {
+
+        width: 15%;
+        margin: 10px;
+        height: 40vh;
+    }
 }
