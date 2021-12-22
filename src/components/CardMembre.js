@@ -25,10 +25,17 @@ function CardMembre(props) {
 
 <div className="GaleryCharacters">
 				{isLoading ? (
-					characters.filter((characters) => characters.gender !== "").map((character) => (
+					characters.filter((characters) => characters.id < 26 ||characters.bornLocation === "naboo").map((character) => (
 						<div className="cardMemberSolo">
-							<p>{character.name}</p>
+							
                             <img className="CardImg" src={character.image} alt={character.name} />
+							<div className="basCard">
+							<p>{character.name}</p>
+							<p className="sousCard">From {character.homeworld}</p>
+							</div>
+
+
+
 						</div>
 					))
 				) : (
