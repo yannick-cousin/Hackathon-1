@@ -191,6 +191,8 @@ export default function Quizz() {
 						{answerOption.answerText}
 					</button>)
 				}
+							<div className='paddingloveIs'></div>
+
 			</div>
 			<div className="loveIs">
 				<div className="loveIsText">Votre Âme sœur est ... </div>
