@@ -1,8 +1,4 @@
-.navbar {
 
-  position: fixed;
-  width: 100%;
-}
 
 .navigation {
   display: none;
@@ -72,9 +68,9 @@ header {height: 100px;}
   top: 37%;
   flex-direction: row;
   justify-content: space-around;
-  position: relative;
   transform: translateY(-100%);
   transition: transform 0.5s ease-in;
+  position: relative;
 
 }
 
@@ -170,6 +166,15 @@ font-family: ;
 
 }
 @media screen and (min-width: 668px) {
+
+  .navbar {
+
+    position: fixed;
+    width: 100%;
+  }
+
+
+
   .b1, .menuMobile, .menuDeroulant, .b1, .ligne {
     display: none;
   }
