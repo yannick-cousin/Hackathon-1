@@ -1,11 +1,11 @@
 .renducontact {
   display: flex;
+  justify-content: center;
   width: 95%;
   height: auto;
-  background: #222327;
+  background: #4362e0;
   color: #fff;
   border-radius: 5px;
   margin: 5px;
   padding: 2px;
-
 }

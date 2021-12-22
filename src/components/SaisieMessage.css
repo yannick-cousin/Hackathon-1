@@ -1,0 +1,13 @@
+.saisiemessage {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.envoi {
+  background-color: red;
+  color: white;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 15px;
+}
