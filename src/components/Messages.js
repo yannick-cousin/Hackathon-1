@@ -12,28 +12,23 @@ const Messages = () => {
 	const [contenueMessage, setContenueMessage] = useState([
 		{	id: 0,
 		idu: 1,
-		message: "Bonjour, j'adore votre drôle de chapeau. Je me sens triste ce soir, dînons ensemble.",
+		message: "Bonjour, j'adore votre drôle de chapeau. Je me sens triste ce soir Dînons ensemble.",
 		date: "31/10/2942",
 		heure: "21:23"
 	},
 	{	id: 1,
 		idu: 1,
-		message: "Je vous ai trouvé sexy à la TV, dînons ensemble.",
+		message: "Je vous ai trouvé sexy à la TV. Dînons ensemble.",
 		date: "15/11/2942",
 		heure: "19:45"
 	},
 	{	id: 2,
 		idu: 1,
-		message: "Je n'ai pas faim, dînons ensemble.",
+		message: "Je n'ai pas faim. Dînons ensemble.",
 		date: "07/12/2942",
 		heure: "20:30"
-	},
-	{	id: 3,
-		idu: 1,
-		message: "Je ne suis pas mort, dînons ensemble.",
-		date: "04/02/2943",
-		heure: "19:45"
-	}]);
+	}
+]);
 
 	useEffect(() => {
 		const getData = () => {
@@ -59,9 +54,9 @@ const Messages = () => {
         key={contact.id}
         id={contact.id}
         name={contact.name}
-        />  
-			: <div className="isLoading">...Loading...</div>}
-				<div className="recceptionmessages">
+        />
+			: <div className="loader-container"><div className="Loader"></div></div>}
+				<div className="receptionmessages">
 				{contenueMessage.map((message) => (
 					<ListingMessages 
 						id={message.id}

@@ -24,13 +24,13 @@
 }
   
 .contacts {  
-  background-color: #0f0;
-  height: 500px;
+  /*background-color: rgb(135, 255, 135);*/
+  height:100%;
   border-radius: 10px;
 }
 .receptionmessages { 
   grid-area: 1 / 2 / 5 / 4;
-  background-color: #00f;
+  /*background-color: #00f;*/
   height: auto;
   border-radius: 10px;
 }

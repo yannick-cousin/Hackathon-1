@@ -6,4 +6,7 @@
 
 .envoi {
   background-color: red;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 15px;
 }
