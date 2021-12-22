@@ -47,7 +47,7 @@ const Messages = () => {
 			<div className="welcomemessages">
 				<h2 className="module">Messages</h2>
 				Bienvenue sur le module messages.<br />
-				vous pouvez communiquer avec les autres membres de Star Seducer.
+				Vous pouvez communiquer avec les autres membres de Star Seducer.
 			</div>
 			<div className="contacts">
 			{isLoading ? <Contact

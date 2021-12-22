@@ -1,3 +1,11 @@
+.messages {
+
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	font-weight: bold;
+}
+
 .welcomemessages {
   display: flex;
   flex-direction: column;
@@ -24,9 +32,11 @@
 }
   
 .contacts {  
-  /*background-color: rgb(135, 255, 135);*/
-  height:100%;
-  border-radius: 10px;
+	display: flex;
+    height: 100%;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
 }
 .receptionmessages { 
   /*background-color: #00f;*/
@@ -99,3 +109,36 @@
 		transform: rotate(360deg);
 	}
 }
+
+
+@media (max-width: 650px) { 
+
+
+.module {
+color: #fff;
+background-color: transparent;
+}
+
+
+.welcomemessages {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+color: #fff;
+padding: 0px 10px 10px 10px;
+}
+
+.contacts {  
+display: flex;
+height: 100%;
+border-radius: 10px;
+flex-direction: column;
+align-items: center;
+margin: 10px;
+}
+
+
+
+
+ }

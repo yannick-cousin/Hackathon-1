@@ -1,11 +1,17 @@
 .renducontact {
   display: flex;
-  justify-content: center;
-  width: 95%;
+  justify-content: flex-start;
+  width: 50%;
   height: auto;
-  background: #4362e0;
+  background: #2196f3;
   color: #fff;
-  border-radius: 5px;
-  margin: 5px;
+  border-radius: 7px;
   padding: 2px;
+  align-self: flex-start;
+  padding-left: 10px;
+}
+.name{
+
+align-self: flex-start;
+
 }
