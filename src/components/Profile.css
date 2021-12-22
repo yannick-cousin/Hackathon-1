@@ -107,11 +107,16 @@ font-weight: bold;
 .btnAnnuler {
 background-color: rgb(255, 82, 82);
 color: white;
+display: flex;
+justify-content: center;
+
 }
 
 .btnEnregistrer {
 background-color: rgb(91, 91, 250);
 color: white;
+display: flex;
+justify-content: center;
 }
 
 input {
