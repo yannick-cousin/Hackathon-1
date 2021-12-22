@@ -2,10 +2,11 @@
   display: flex;
   width: 95%;
   height: auto;
-  background: #222327;
+  background: #727ca5;
   color: #fff;
   border-radius: 5px;
-  margin: 5px;
+  margin: 10px;
   padding: 2px;
-
+  text-align: center;
+  justify-content: center;
 }

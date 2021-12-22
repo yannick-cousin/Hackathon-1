@@ -1,0 +1,20 @@
+.question {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: flex-start;
+  margin: 10px;
+  padding-right: 10px;
+  border-radius: 15px;
+}
+
+.message {
+  font-weight: blod;
+  padding-left: 10px;
+}
+
+.heure {
+  color: rgb(10, 35, 255);
+  padding-left: 10px;
+}
