@@ -52,7 +52,7 @@ export default function Quizz() {
 			],
 		},
         {
-			questionText: 'plutôt balade perdu dans le peuple ou plutôt rester entre richous ?',
+			questionText: 'Plutôt balade perdu dans le peuple ou plutôt rester entre richoux ?',
 			answerOptions: [
 				{ answerText: 'J`irai dormir chez les gueux', match: 'JarJarBinks' },
 				{ answerText: 'OKLM dans la jet 7', match: 'Padme' },
@@ -177,8 +177,10 @@ export default function Quizz() {
 				<div className='question-count'>
 					<span>Question {currentQuestion + 1}</span>/{questions.length}
 				</div>
+				<div className='containerquestion-text'>
 				<div className='question-text'>
 					{questions[currentQuestion].questionText}
+				</div>
 				</div>
 			</div>
 			<div className='answer-section'>
@@ -191,8 +193,11 @@ export default function Quizz() {
 				}
 			</div>
 			<div className="loveIs">
-				You have matched with {love}
-			</div>
+				<div className="loveIsText">Votre Âme sœur est ... </div>
+				<div className="containerloveIsLove">
+					<div className="loveIsLove">{love}</div>
+				</div>
+				</div>		
 			</div>
 		</div>
 	);
