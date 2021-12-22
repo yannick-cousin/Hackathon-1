@@ -35,7 +35,7 @@ const Home = () => {
       </div>
       <div className="prez-2">
         Ici, pas de pression, pas racisme, vous trouverez la personne idéale pour vous. <br />
-        N'hesitez pas à faire notre quizz afin de vous orienteez vers la bonne personne.
+        N'hesitez pas à faire notre quizz afin de vous orientez vers la bonne personne.
       </div>
       <h3>Les actualités chaudes du fin fond de la galaxie</h3>
       </div>
