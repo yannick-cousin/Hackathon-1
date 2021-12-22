@@ -12,7 +12,7 @@ const Messages = () => {
 	const [contenueMessage, setContenueMessage] = useState([
 		{	id: 0,
 		idu: 1,
-		message: "Bonjour, j'adore votre drôle de chapeau. Je me sens triste ce soir Dînons ensemble.",
+		message: "Bonjour, j'adore votre drôle de chapeau. Je me sens triste ce soir. Dînons ensemble.",
 		date: "31/10/2942",
 		heure: "21:23"
 	},
