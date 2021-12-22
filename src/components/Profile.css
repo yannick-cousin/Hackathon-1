@@ -1,6 +1,8 @@
 .Profile {
 
     color: white;
+    margin: auto;
+    width:50%;
 
 }
 
@@ -116,3 +118,39 @@ input {
 
     color: white
 }
+
+
+@media (max-width: 800px) {
+
+    .Profile {
+
+        width: 90%;
+
+
+    }
+
+.containerAvatarEtPrevisualisation {
+
+display: flex;
+flex-direction: column;
+
+}
+
+..btnEnregistrerCroppedImg span {
+
+color: white;
+
+
+}
+
+.MuiButton-label {
+    width: 100%;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    color: white;
+    font-weight: bold;
+}
+
+  }
+
