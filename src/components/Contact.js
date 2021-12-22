@@ -9,5 +9,4 @@ const Contact = ({key, id, name}) => {
   )
 }
 
-
 export default Contact;

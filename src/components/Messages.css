@@ -23,8 +23,7 @@
   grid-row-gap: 5px;
 }
   
-.contacts { 
-  grid-area: 1 / 1 / 6 / 2; 
+.contacts {  
   background-color: #0f0;
   height: 500px;
   border-radius: 10px;
