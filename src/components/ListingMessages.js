@@ -5,7 +5,7 @@ const ListingMessages = (props) => {
 	return (
 		<div className="question">
 			<div className="message">{props.message}</div>
-			<div className="heure">Reçu à {props.heure}</div>
+			<div className="heure">Reçu le {props.date} à {props.heure}</div>
 		</div>
 	)
 }

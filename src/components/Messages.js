@@ -1,4 +1,6 @@
 import Contact from './Contact';
+import ListingMessages from './ListingMessages';
+import SaisieMessage from './SaisieMessage';
 
 import {useState, useEffect} from 'react';
 
@@ -7,28 +9,43 @@ import './Messages.css';
 const Messages = () => {
 	const [contact, setContact] = useState([]);
 	const [isLoading, setIsLoading] = useState(false);
-	let listContact = [];
-
-	const update = (list) => {
-		listContact = contact;
-		console.log("listing :",listContact);
-		listContact.unshift(list);
-		setContact(listContact);
-	}
+	const [contenueMessage, setContenueMessage] = useState([
+		{	id: 0,
+		idu: 1,
+		message: "Bonjour, j'adore votre drôle de chapeau. Je me sens triste ce soir, dînons ensemble.",
+		date: "31/10/2942",
+		heure: "21:23"
+	},
+	{	id: 1,
+		idu: 1,
+		message: "Je vous ai trouvé sexy à la TV, dînons ensemble.",
+		date: "15/11/2942",
+		heure: "19:45"
+	},
+	{	id: 2,
+		idu: 1,
+		message: "Je n'ai pas faim, dînons ensemble.",
+		date: "07/12/2942",
+		heure: "20:30"
+	},
+	{	id: 3,
+		idu: 1,
+		message: "Je ne suis pas mort, dînons ensemble.",
+		date: "04/02/2943",
+		heure: "19:45"
+	}]);
 
 	useEffect(() => {
 		const getData = () => {
-			for (let i = 1; i < 5; i++) {
-				//setContact([]);
-				fetch(`https://miadil.github.io/starwars-api/api/id/${i}.json`)
-				.then((res) => res.json())
-				.then((res) => console.log("poulet") || update(res));
-			}
-			setIsLoading(true)
+			fetch(`https://miadil.github.io/starwars-api/api/id/10.json`)
+			.then((res) => res.json())
+			.then((res) => setContact(res));
 		}
+		setIsLoading(true)
 		getData();
-	},[])
-		useEffect(() => {console.log("Wesh")},[contact])
+	},
+	[])
+	
 	return (
 		<div className="messages">
 			 {console.log("retour :",contact)}
@@ -38,14 +55,27 @@ const Messages = () => {
 				vous pouvez communiquer avec les autres membres de Star Seducer.
 			</div>
 			<div className="contacts">
-			{isLoading ? contact.map((character) => (
-				<Contact
-        key={character.id}
-        id={character.id}
-        name={character.name}
-        />
-        )) 
+			{isLoading ? <Contact
+        key={contact.id}
+        id={contact.id}
+        name={contact.name}
+        />  
 			: <div className="isLoading">...Loading...</div>}
+				<div className="recceptionmessages">
+				{contenueMessage.map((message) => (
+					<ListingMessages 
+						id={message.id}
+						message={message.message}
+						date={message.date}
+						heure={message.heure}
+					/>))}
+				</div>
+				<div className="saisieMessage">
+					<SaisieMessage 
+						setContenueMessage={setContenueMessage}
+						contenueMessage={contenueMessage}
+					/>
+				</div>
 			</div>
 		</div>
 	)

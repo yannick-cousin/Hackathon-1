@@ -1,0 +1,9 @@
+.saisiemessage {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.envoi {
+  background-color: red;
+}
