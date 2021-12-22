@@ -58,7 +58,7 @@ a:link {
 
 
 
-header {height: 100px;}   
+header {height: 70px;}   
 
 .menuDeroulant {
   background-color: #fff; 
@@ -167,6 +167,8 @@ font-family: ;
 }
 @media screen and (min-width: 668px) {
 
+
+  header {height: 100px;}   
   .navbar {
 
     position: fixed;
