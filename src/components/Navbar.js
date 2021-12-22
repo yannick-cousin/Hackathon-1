@@ -44,7 +44,7 @@ const Navbar = ({notifications, setNotifications}) => {
       </div>
       <div className="menuMobile">
         <div className='containerLogoNavbar'>        
-          <div className='logoNavBar'> Space Seducers</div>
+          <div className='logoNavBar'> Star Seducers</div>
         </div>
 
  	      <button onClick={() => setMenu(!menu)} className={menu === true ? "b1 active" : "b1"}>
@@ -59,7 +59,7 @@ const Navbar = ({notifications, setNotifications}) => {
       <ul>
 
       <NavLink to="/"><li>Accueil</li></NavLink>
-      <NavLink to="/"><li>Quiz</li></NavLink>
+      <NavLink to="/quizz"><li>Quiz</li></NavLink>
       <NavLink to="/messages"><li>Messages</li></NavLink>
       <NavLink to="/members"><li>Membres</li></NavLink>
       <NavLink to="/profile"><li>Profil</li></NavLink>
