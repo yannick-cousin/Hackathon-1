@@ -1,14 +1,26 @@
+.quizContainer {
 
+  display: flex;
+  justify-content: center;
+}
   
+
+
   .app {
     background-color: #252d4a;
-    width: 2500px;
+    width: 90%;
     min-height: 500px;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 53px;
+    padding: 20px 0px 20px 0px;
+    box-shadow: 10px 10px 42px 0px rgb(0 0 0 / 75%);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    font-weight: bold;
+    margin: 20px 20px 20px 20px;
+  }
+
+  .app button {
+    font-weight: bold;
   }
 
   .loveIs {
@@ -17,6 +29,7 @@
     background-color: whitesmoke;
     border-radius: 10%;
     font-size: 25px;
+    margin: 0px 20px 0px 20px;
   }
   
   .score-section {
@@ -33,6 +46,7 @@
     padding: 20px;
     background-color: whitesmoke;
     border-radius: 10%;
+    margin: 0px 20px 0px 20px;
   }
   
   .question-count {
@@ -40,13 +54,40 @@
   }
   
   .question-count span {
-    font-size: 28px;
+    font-size: 250%;
   }
   
   .question-text {
     margin-bottom: 12px;
+    font-size: 150%;
+    display: flex;
+  }
+
+  .containerquestion-text {
+
+    display: flex;
+    justify-content: center;
+    height: 75%;
+    align-items: center;
   }
   
+  .loveIsText {
+
+    display: flex;
+    font-size: 120%;
+
+  }
+
+  .containerloveIsLove {
+    display: flex;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+
+    
+
+  }
   .timer-text {
     background: rgb(230, 153, 12);
     padding: 15px;
@@ -63,6 +104,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-size: 120%;
+  }
+
+  .answer-section button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
+    margin: 5px;
   }
   
   button {
