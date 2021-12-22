@@ -7,199 +7,100 @@ export default function Quizz() {
 		{
 			questionText: 'Où habites-tu ?',
 			answerOptions: [
-				{ answerText: 'Naboo', match: 'Anakin' },
-				{ answerText: 'Kashyyyk', match: true },
-				{ answerText: 'Kamino', match: true },
-				{ answerText: 'Stewjon', match: true },
-                { answerText: 'Tatooine', match: true },
-                { answerText: 'Dagobah', match: true },
+				{ answerText: 'Naboo', match: 'R2D2' },
+				{ answerText: 'Kashyyyk', match: 'Chewbacca' },
+				{ answerText: 'Korriban', match: 'Palpatine' },
+				{ answerText: 'Stewjon', match: 'Padme' },
+                { answerText: 'Tatooine', match: 'JarJarBinks' },
+                { answerText: 'Dagobah', match: 'Obiwan' },
 			],
 		},
 		{
-			questionText: 'question 2',
+			questionText: 'Comment préfères-tu te battre ?',
 			answerOptions: [
-				{ answerText: 'Naboo', match: 'Anakin' },
-				{ answerText: 'Kashyyyk', match: true },
-				{ answerText: 'Kamino', match: 'Vlad' },
-				{ answerText: 'Stewjon', match: true },
-                { answerText: 'Tatooine', match: true },
-                { answerText: 'Dagobah', match: true },
+				{ answerText: 'Pas besoin de se battre quand on peut fuir', match: 'JarJarBinks' },
+				{ answerText: 'Avec un taser', match: 'R2D2' },
+				{ answerText: 'Avec un pistolet laser', match: 'Padme' },
+				{ answerText: 'Avec une arbalète laser', match: 'Chewbacca' },
+                { answerText: 'Avec la force', match: 'Obiwan' },
+                { answerText: 'Avec des putains d`éclairs', match: 'Palpatine' },
 			],
 		},
 		{
-			questionText: 'question 3',
+			questionText: 'Comment préfères-tu te déplacer',
 			answerOptions: [
-				{ answerText: 'Naboo', match: true },
-				{ answerText: 'Kashyyyk', match: true },
-				{ answerText: 'Kamino', match: true },
-				{ answerText: 'Stewjon', match: 'Vlad' },
-                { answerText: 'Tatooine', match: true },
-                { answerText: 'Dagobah', match: true },
+				{ answerText: 'En uber, car je suis un entrepreneur galactique', match: 'Padme' },
+				{ answerText: 'A pieds, car je suis un sportif', match: 'Chewbacca' },
+				{ answerText: 'Sur mon trône, transporté sur le dos de mes serviteurs', match: 'Palpatine' },
+				{ answerText: 'Sur une moto du turfu qui lévite', match: 'Obiwan' },
+                { answerText: 'Quand je ne fuis pas, je préfère ne pas bouger', match: 'JarJarBinks' },
+                { answerText: 'En vaisseau', match: 'R2D2' },
 			],
 		},
 		{
-			questionText: 'question 4',
+			questionText: 'Les poils, ça te dérange ?',
 			answerOptions: [
-				{ answerText: 'Naboo', match: true },
-				{ answerText: 'Kashyyyk', match: true },
-				{ answerText: 'Kamino', match: true },
-				{ answerText: 'Stewjon', match: true },
-                { answerText: 'Tatooine', match: true },
-                { answerText: 'Dagobah', match: true },
+				{ answerText: 'Oui, ça dégoute sa mère', match: 'Padme' },
+				{ answerText: 'Non tranquille, je te caresse tel mon animal de compagnie', match: 'Chewbacca' },
 			],
 		},
         {
-			questionText: 'question 5',
+			questionText: 'Quel côté de la force ?',
 			answerOptions: [
-				{ answerText: 'Naboo', match: true },
-				{ answerText: 'Kashyyyk', match: true },
-				{ answerText: 'Kamino', match: true },
-				{ answerText: 'Stewjon', match: true },
-                { answerText: 'Tatooine', match: true },
-                { answerText: 'Dagobah', match: true },
+				{ answerText: 'Côté obscur', match: 'Palpatine' },
+				{ answerText: 'Côté clair', match: 'Obiwan' },
 			],
 		},
         {
-			questionText: 'question 6',
+			questionText: 'plutôt balade perdu dans le peuple ou plutôt rester entre richous ?',
 			answerOptions: [
-				{ answerText: 'Naboo', match: true },
-				{ answerText: 'Kashyyyk', match: true },
-				{ answerText: 'Kamino', match: true },
-				{ answerText: 'Stewjon', match: true },
-                { answerText: 'Tatooine', match: true },
-                { answerText: 'Dagobah', match: true },
+				{ answerText: 'J`irai dormir chez les gueux', match: 'JarJarBinks' },
+				{ answerText: 'OKLM dans la jet 7', match: 'Padme' },
+				
 			],
 		},
         {
-			questionText: 'question 7',
+			questionText: 'Tu as les yeux:',
 			answerOptions: [
-				{ answerText: 'Naboo', match: true },
-				{ answerText: 'Kashyyyk', match: true },
-				{ answerText: 'Kamino', match: true },
-				{ answerText: 'Stewjon', match: true },
-                { answerText: 'Tatooine', match: true },
-                { answerText: 'Dagobah', match: true },
+				{ answerText: 'Jaunes', match: 'Palpatine' },
+				{ answerText: 'Verts', match: 'Padme' },
+				{ answerText: 'Bleus', match: 'Obiwan' },
+				{ answerText: 'Marrons', match: 'JarJarBinks' },
+                { answerText: 'Noisettes', match: 'Chewbacca' },
+                { answerText: 'Je dispose de caméras pour pouvoir voir', match: 'R2D2' },
 			],
 		},
         {
-			questionText: 'question 8',
+			questionText: 'Ton principal ennemi',
 			answerOptions: [
-				{ answerText: 'Naboo', match: true },
-				{ answerText: 'Kashyyyk', match: true },
-				{ answerText: 'Kamino', match: true },
-				{ answerText: 'Stewjon', match: true },
-                { answerText: 'Tatooine', match: true },
-                { answerText: 'Dagobah', match: true },
+				{ answerText: 'Aucun, je me range du côté du plus fort', match: 'JarJarBinks' },
+				{ answerText: 'L`empire', match: 'Chewbacca' },
+				{ answerText: 'Les Jedis', match: 'Palpatine' },
+				{ answerText: 'La rouille', match: 'R2D2' },
+                { answerText: 'Le côté obscure de la force', match: 'Obiwan' },
+                { answerText: 'Les séparatistes', match: 'Padme' },
 			],
 		},
         {
-			questionText: 'question 9',
+			questionText: 'Quel est ton métier ?',
 			answerOptions: [
-				{ answerText: 'Naboo', match1: true },
-				{ answerText: 'Kashyyyk', match2: true },
-				{ answerText: 'Kamino', match3: true },
-				{ answerText: 'Stewjon', match4: true },
-                { answerText: 'Tatooine', match5: true },
-                { answerText: 'Dagobah', match6: true },
+				{ answerText: 'Guerrier', match: 'Chewbacca' },
+				{ answerText: 'Jeune entrepreneur', match2: 'Padme' },
+				{ answerText: 'Jedi', match3: 'Obiwan' },
+				{ answerText: 'Chômeur', match4: 'JarJarBinks' },
+                { answerText: 'Mécanicien', match5: 'R2D2' },
+                { answerText: 'Politique', match6: 'Palpatine' },
 			],
 		},
         {
-			questionText: 'question 10',
+			questionText: 'On te qualifie généralement de :',
 			answerOptions: [
-				{ answerText: 'Naboo', match1: true },
-				{ answerText: 'Kashyyyk', match2: true },
-				{ answerText: 'Kamino', match3: true },
-				{ answerText: 'Stewjon', match4: true },
-                { answerText: 'Tatooine', match5: true },
-                { answerText: 'Dagobah', match6: true },
-			],
-		},
-        {
-			questionText: 'question 11',
-			answerOptions: [
-				{ answerText: 'Naboo', match1: true },
-				{ answerText: 'Kashyyyk', match2: true },
-				{ answerText: 'Kamino', match3: true },
-				{ answerText: 'Stewjon', match4: true },
-                { answerText: 'Tatooine', match5: true },
-                { answerText: 'Dagobah', match6: true },
-			],
-		},
-        {
-			questionText: 'question 12',
-			answerOptions: [
-				{ answerText: 'Naboo', match1: true },
-				{ answerText: 'Kashyyyk', match2: true },
-				{ answerText: 'Kamino', match3: true },
-				{ answerText: 'Stewjon', match4: true },
-                { answerText: 'Tatooine', match5: true },
-                { answerText: 'Dagobah', match6: true },
-			],
-		},
-        {
-			questionText: 'question 13',
-			answerOptions: [
-				{ answerText: 'Naboo', match1: true },
-				{ answerText: 'Kashyyyk', match2: true },
-				{ answerText: 'Kamino', match3: true },
-				{ answerText: 'Stewjon', match4: true },
-                { answerText: 'Tatooine', match5: true },
-                { answerText: 'Dagobah', match6: true },
-			],
-		},
-        {
-			questionText: 'question 14',
-			answerOptions: [
-				{ answerText: 'Naboo', match1: true },
-				{ answerText: 'Kashyyyk', match2: true },
-				{ answerText: 'Kamino', match3: true },
-				{ answerText: 'Stewjon', match4: true },
-                { answerText: 'Tatooine', match5: true },
-                { answerText: 'Dagobah', match6: true },
-			],
-		},
-        {
-			questionText: 'question 15',
-			answerOptions: [
-				{ answerText: 'Naboo', match: true },
-				{ answerText: 'Kashyyyk', match: true },
-				{ answerText: 'Kamino', match: true },
-				{ answerText: 'Stewjon', match: true },
-                { answerText: 'Tatooine', match: true },
-                { answerText: 'Dagobah', match: true },
-			],
-		},
-        {
-			questionText: 'question 16',
-			answerOptions: [
-				{ answerText: 'Naboo', match: true },
-				{ answerText: 'Kashyyyk', match: true },
-				{ answerText: 'Kamino', match: true },
-				{ answerText: 'Stewjon', match: true },
-                { answerText: 'Tatooine', match: true },
-                { answerText: 'Dagobah', match: true },
-			],
-		},
-        {
-			questionText: 'question 17',
-			answerOptions: [
-				{ answerText: 'Naboo', match: true },
-				{ answerText: 'Kashyyyk', match: true },
-				{ answerText: 'Kamino', match: true },
-				{ answerText: 'Stewjon', match: true },
-                { answerText: 'Tatooine', match: true },
-                { answerText: 'Dagobah', match: true },
-			],
-		},
-        {
-			questionText: 'question 18',
-			answerOptions: [
-				{ answerText: 'Naboo', match: true },
-				{ answerText: 'Kashyyyk', match: true },
-				{ answerText: 'Kamino', match: true },
-				{ answerText: 'Stewjon', match: true },
-                { answerText: 'Tatooine', match: true },
-                { answerText: 'Dagobah', match: true },
+				{ answerText: 'Maléfique', match: 'Palpatine' },
+				{ answerText: 'Gros lâche', match2: 'JarJarBinks' },
+				{ answerText: 'Brave défenseur de la veuve et de l`orphelin', match3: 'Obiwan' },
+				{ answerText: 'Beau gosse jeune entrepreneur', match4: 'Padme' },
+                { answerText: 'De portugais à cause de te pilosité imposante', match5: 'Chebacca' },
+                { answerText: 'Corbeille de salle de bain', match6: 'R2D2' },
 			],
 		},
 	];
@@ -207,88 +108,89 @@ export default function Quizz() {
     
 
     const [currentQuestion, setCurrentQuestion] = useState(0); // state de la question
+	const [love, setLove] = useState('');
 
-	let myArray = [
+	let [myArray, setMyArray] = useState([
 		{
-			scoreMatch1: 0, 
-		},
-		{
-			scoreMatch2: 0,
-		},
-		{
-			scoreMatch3: 0, 
-		},
-		{
-			scoreMatch4: 0, 
-		},
-		{
-			scoreMatch5: 0,
-		},
-		{
-			scoreMatch6: 0,
+			Palpatine: 0, 
+			JarJarBinks: 0,
+			Padme: 0, 
+			Chewbacca: 0, 
+			Obiwan: 0,
+			R2D2: 0,
 		}
-	]
+	])
     
     const answerResponse = (match) => {
-        if (match === 'Anakin') { 
-            (myArray[0].scoreMatch1 += 1);
+        if (match === 'Palpatine') { 
+            myArray[0].Palpatine += 1;
             console.log(myArray);
+		}
 
+        else if (match === 'JarJarBinks') {
+            myArray[0].JarJarBinks += 1;
+            console.log(myArray);
         }
 
-        else if (match === 'Vlad') {
-            (myArray[1].scoreMatch2 += 1);
+        else if (match === 'Padme') {
+            myArray[0].Padme += 1;
             console.log(myArray);
-
         }
-
-        else if (match === 'Vlad') {
-            (myArray[2].scoreMatch3 += 1);
+        else if (match === 'Chewbacca') {
+            myArray[0].Chewbacca += 1;
             console.log(myArray);
-
         }
-        else if (match === 'Jake') {
-            myArray[3].scoreMatch4 += 1;
+        else if (match === 'Obiwan') {
+            myArray[0].Obiwan += 1;
             console.log(myArray);
-
         }
-        else if (match === 'Bel') {
-            myArray[4].scoreMatch5 += 1;
+        else if (match === 'R2D2') {
+            myArray[0].R2D2 += 1;
             console.log(myArray);
-
-        }
-        else if (match === 'John') {
-            myArray[5].scoreMatch6 += 1;
-            console.log(myArray);
-
         } 
+
+
 		let currentNumber = currentQuestion; 
-		if(currentQuestion < 19){
+		if(currentQuestion < 9){
 			setCurrentQuestion(currentNumber += 1);
+			console.log(currentQuestion)
 		} else {
-			console.log(myArray);
+			let biggest = '';
+			for(let name in myArray[0]){
+				if(biggest !== '' && myArray[0][name] > myArray[0][biggest]){
+					biggest = name; 	
+				} else if (biggest === ''){
+					biggest = name; 
+				}
+			}
+			setLove(biggest); 
 		}
     }
 
 	return (
 		<div className='app'>	
-			<div className='score-section'>Tu auras un match avec les {questions.length} questions. </div>
-				<div className='question-section'>
-					<div className='question-count'>
-						<span>Question {currentQuestion + 1}</span>/{questions.length}
-					</div>
-					<div className='question-text'>
-						{questions[currentQuestion].questionText}
-					</div>
+			<div className='score-section'>
+				 
+			</div>
+			<div className='question-section'>
+				<div className='question-count'>
+					<span>Question {currentQuestion + 1}</span>/{questions.length}
 				</div>
-				<div className='answer-section'>
-					{
-						questions[currentQuestion].answerOptions.map((answerOption)=> 
-						<button 
-							onClick={() => answerResponse(answerOption.match)}>
-							{answerOption.answerText}
-						</button>)
-					}
+				<div className='question-text'>
+					{questions[currentQuestion].questionText}
+				</div>
+			</div>
+			<div className='answer-section'>
+				{
+					questions[currentQuestion].answerOptions.map((answerOption)=> 
+					<button 
+						onClick={() => answerResponse(answerOption.match)}>
+						{answerOption.answerText}
+					</button>)
+				}
+			</div>
+			<div clasName="loveIs">
+				You have matched with {love}
 			</div>
 		</div>
 	);

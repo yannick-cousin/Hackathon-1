@@ -9,6 +9,7 @@ import {Route, Routes} from 'react-router-dom';
 import {useState} from 'react';
 
 import './App.css';
+import Quizz from './screens/Quizz';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/Quizz" element={<Quizz />} />
           <Route path="/messages" element={<Messages notifications={notifications} setNotifications={setNotifications}/>} />
           <Route path="/members" element={<Members />} />
           <Route path="/settings" element={<Settings />} />
