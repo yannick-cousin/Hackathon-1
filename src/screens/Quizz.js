@@ -168,7 +168,8 @@ export default function Quizz() {
     }
 
 	return (
-		<div className='app'>	
+		<div className='quizContainer'>
+			<div className='app'>
 			<div className='score-section'>
 				 
 			</div>
@@ -191,6 +192,7 @@ export default function Quizz() {
 			</div>
 			<div className="loveIs">
 				You have matched with {love}
+			</div>
 			</div>
 		</div>
 	);

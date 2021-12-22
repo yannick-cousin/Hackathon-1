@@ -1,14 +1,25 @@
+.quizContainer {
 
+  display: flex;
+  justify-content: center;
+}
   
+
+
   .app {
     background-color: #252d4a;
-    width: 2500px;
+    width: 95%;
     min-height: 500px;
     border-radius: 15px;
-    padding: 20px;
-    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    padding: 20px 0px 20px 0px;
+    box-shadow: 10px 10px 42px 0px rgb(0 0 0 / 75%);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  .app button {
+    font-weight: bold;
   }
 
   .loveIs {
@@ -17,6 +28,7 @@
     background-color: whitesmoke;
     border-radius: 10%;
     font-size: 25px;
+    margin: 0px 20px 0px 20px;
   }
   
   .score-section {
@@ -33,6 +45,7 @@
     padding: 20px;
     background-color: whitesmoke;
     border-radius: 10%;
+    margin: 0px 20px 0px 20px;
   }
   
   .question-count {
@@ -63,6 +76,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  .answer-section button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 15%;
   }
   
   button {
